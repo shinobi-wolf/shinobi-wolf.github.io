@@ -1,0 +1,106 @@
+Srihari Vemuru
++1 (515) 451-8339 | vemshari27@gmail.com | Ames, IA, USA | LinkedIn | GitHub | Portfolio | Website
+
+SKILLS
+Languages: Python, C/C++, Java, JavaScript, MATLAB
+Robotics Tools: ROS, Gym, Issac Sim, MuJoCo, CARLA, Gazebo, SUMO, FreeCAD, Unreal Engine, OpenCV, Open3D
+AI/ML/DL: Pytorch, Tensorflow, HuggingFace, NLTK, LangChain, Tesseract, Ollama, Scikit-learn
+Web Development: FastAPI, Node.js, REST APIs, Pandas, NumPy, MongoDB, MySQL, PostgreSQL, Redis
+Cloud Orchestration: AWS, GCP, S3, EC2, Kubernetes, Docker
+
+EXPERIENCE
+Iowa State University	August 2024 - Present
+Research Assistant at Resilient Multi-Agent Systems Lab	Ames, IA, USA
+ Developed a physics-based simulation engine that models real-world challenges (e.g., traffic, load, wind) for multi-agent coordination and planning in delivery robot applications.
+ Introduced a novel Deep-RL model for multi-robot routing with SUMO-based traffic modeling and Grafana dashboards, outperforming SOTA methods by 10% in energy efficiency.
+ Designed and built a 3D-printed, CAD-modeled battery swapping mechanism using a passive sliding dock interface, enabling autonomous in-field battery exchange for delivery robots.
+
+Iowa State University	August 2024 - Present
+Teaching Assistant for System Dynamics and Controls	Ames, IA, USA
+ Assisting professor in course delivery topics: Laplace Transforms, State-Space Modeling, Nyquist Plots, and
+ PID.
+ Lab administrator and MATLAB tutorial instructor.
+
+Strider Robotics	September 2022 - July 2024
+Robotics AI Engineer	Bengaluru, India
+ Developed a novel object tracking model using Simultaneous Localization and Mapping (SLAM) that has surpassed state-of-the-art object trackers by 30.9% in robotic scenarios.
+ Developed VLM-guided navigation in Nvidia Isaac Sim with LLaVA (vis Ollama), allowing a quadruped to understand natural language commands and navigate indoor spaces using waypoints.
+ Created a MuJoCo quadruped simulation using Unitree Go1 URDF with terrain randomization and trained PPO agents to enhance sim-to-real transfer for robust locomotion in diverse conditions.
+ Built a 3D reconstruction and mapping pipeline using multi-view geometry (COLMAP/Open3D) to generate dense point clouds and semantic maps, improving localization robustness and enabling context-aware decision-making for manipulation and navigation tasks.
+ 	Developed a navigation stack and planner for a quadruped robot mounted with a manipulator arm for agricultural spraying and used AutoCAD for creating custom 3D printed mounts for cameras and sprayer manipulators.
+
+MD.ai	June 2023 - August 2023
+AI Engineering Intern	New York, NY, USA
+ 	Built a classification model to detect obstructive sleep apnea from joint features of head CT images and patient health records
+ Achieved 95% accuracy in classification.
+
+IBM	January 2022 - June 2022
+Cloud Engineering Intern	Bengaluru, KA, India
+ 	Built a full-stack AI analytics platform (FastAPI, React, PostgreSQL) processing 10K+ real-time data points/hour, reducing latency by 45% via async APIs and caching.
+ 	Deployed a containerized microservices system (Docker, REST APIs) with real-time dashboards, improving deployment efficiency and system reliability by 2×.
+
+EDUCATION
+Iowa State University	August 2024 - May 2026
+
+Master of Science (MS), Mechanical Engineering	GPA: 3.72
+
+International Institute of Information Technology Bangalore, India	August 2020 - July 2022
+Master's, Computer Science	GPA: 3.42
+
+International Institute of Information Technology Bangalore, India	August 2017 - July 2020
+Bachelor's, Computer Science	GPA: 3.42
+
+PROJECTS & OUTSIDE EXPERIENCE
+LocalizeSORT	August 2022 - June 2024
+Robotics Engineer at Strider Robotics	Bengaluru, KA, India
+ An object tracking system that combines SLAM with tracking pipelines to improve robustness in dynamic robotic environments, outperforming state-of-the-art trackers by 30.9%.
+ Link to project
+
+NavVLM	August 2022 - June 2024
+Robotics Engineer at Strider Robotics	Bengaluru, KA, India
+ A quadruped navigation system in NVIDIA Isaac Sim using LLaVA (via Ollama) to interpret natural language commands and generate waypoint-based navigation in indoor environments.
+
+UAV-Assisted Last Mile Delivery	August 2024 - Present
+Research Assistant at Iowa State University	Ames, IA, USA
+ A multi-robot routing framework for last-mile delivery using Deep RL, integrated with SUMO-based traffic simulation and Grafana dashboards for monitoring, achieving improved energy efficiency over SOTA methods.
+ Link to project
+
+NeRFly	January 2025 - Present
+Research Assistant at Iowa State University	Ames, IA, USA
+ A NeRF-driven 3D reconstruction and trajectory planning system for UAVs, generating energy-optimal flight paths and validated through SITL and HITL testing.
+
+Visual Agri-Robot Navigation
+Robotics Engineer at Strider Robotics	Bengaluru, KA, India
+ The goal of this project is to develop a visual servoing algorithm capable of navigating a field robotbetween two middle crop rows using data from a front-facing camera. The robot must continuously maintain its path by minimizing two key navigation errors:
+ Heading Error - the angular difference between the robot's heading and the direction of thecentral navigation line formed between the two middle crop rows
+ Cross-Track Error - the lateral distance between the robot's position and the midpoint lineseparating the two crop rows.
+ Link to project
+
+Machine Learning Instructor	August 2021 - December 2021
+Teaching Assistant at IIIT Bangalore	Bengaluru, KA, India
+ - Conducted tutorial sessions on machine learning concepts and trained students in visualizing data and implementing models.
+ - AWS Management for an class of 100 students.
+
+Battery Swapping Dock	August 2025 - December 2025
+Research Assistant at Iowa State University	Ames, IA, USA
+ A hardware-oriented system featuring a CAD-designed, 3D-printed passive sliding dock that enables UAV-assisted, in-field battery swapping for autonomous delivery robots.
+ Link to project
+
+UAV Object Mapper	August 2024 - December 2024
+Research Assistant at Iowa State University	Ames, IA, USA
+ This project presents an autonomous navigation framework specifically designed for Unmanned Aerial Vehicles (UAVs) tasked with navigating around an arbitrary 3D object
+
+ Using differential motion planning, the framework facilitates real-time dynamic adjustment of UAV flight paths to ensure tight, collision-free coverage around the object
+ The system was rigorously tested within the Gazebo simulation environment, demonstrating its viability in the real world
+ Utilized Ardupilot and Gazebo for Software in the Loop simulation and visualization, and tested its viability on a Crazyflie drone.
+ Link to project
+
+AgriBot Stack	August 2022 - June 2024
+Robotics Engineer at Strider Robotics	Bengaluru, KA, India
+ A navigation and planning stack for a quadruped robot with a manipulator arm for agricultural spraying, including CAD-designed mounts for sensors and actuators.
+ Link to project
+
+TerraPPO	August 2022 - June 2024
+Robotics Engineer at Strider Robotics	Bengaluru, KA, India
+ A MuJoCo-based quadruped simulation using Unitree Go1 URDF with terrain randomization (slopes, steps, deformable surfaces), training PPO agents for robust locomotion and improved sim-to-real transfer.
+ Link to project

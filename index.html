@@ -53,28 +53,15 @@
       <div id="intro-text">
         <h1>Srihari Vemuru</h1>
         <p>
-          Hi! I am a PhD student in Mechanical Engineering at Iowa State University, advised by Dr. Sourabh Bhattacharya. 
+          Hi! I am a Masters student in Mechanical Engineering at Resilient Multi-Agent Systems Lab, Iowa State University. 
           My research focuses on multi-robot planning using reinforcement learning (RL) and robotic perception. 
           I have hands-on experience working with UAVs, UGVs, and quadruped robots. My work integrates RL and computer vision 
           into path planning frameworks to tackle game-theoretic challenges in multi-agent systems.
           <br><br>
-          <!-- In PhD program:
-            Hi :wave: I am Liyiming Ke, 柯丽一鸣, or "Kay". I am a final-year grad student at University of Washington, advised by [Siddhartha Srinivasa](https://goodrobot.ai/). I research on Robotics :robot: Learning, with a focus on **Data-Driven Fine Manipulation**.
-            As a test-bed for pushing the limit of fine manipulation, I built [a chopsticks robot](https://goodcherrybot.github.io/) to showcase the _precision_ and _dynamic reactivity_ of systems trained via reinforcement learning. I have also developed theories like [f-divergence framework for imitation learning and adversarial imitation learning](https://arxiv.org/abs/1905.12888) and [leveraging local-continuity in dynamics](https://arxiv.org/pdf/2310.12972).
-            I was very fortunate to work with [Abhishek Gupta](https://homes.cs.washington.edu/~abhgupta/), [Tapomayukh Bhattacharjee](https://robotics.cornell.edu/faculty/tapomayukh-bhattacharjee-bio/), [Byron Boots](https://homes.cs.washington.edu/~bboots/) and [Sanjiban Choudary](https://sanjibanchoudhury.com/).
-          -->
-        <!-- <div id="more-bio" style="display: None">
-          <br>
-          <p>Liyiming Ke is a full stack robotist at Physical Intelligence researching on Machine Learning for Robot
-            Manipulation. She earned her Ph.D. from the University of Washington with her thesis titled "Data-driven
-            Fine Manipulation". She built a chopsticks-welding robot that demonstrate fine motor skills and developed
-            theoretical frameworks for robot learning. She has led human-robot interactive demonstration at AAAS in 2020
-            and has been selected as one of the Rising Stars in EECS 2023.</p>
-        </div> -->
         <br>
         <!-- <a href="javascript:toggle_bio()">Formal Bio</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
-        <a href="https://scholar.google.com/citations?user=qHaTOIoAAAAJ&hl=en">G. Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://github.com/vemshari27">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://scholar.google.com/citations?user=qHaTOIoAAAAJ&hl=en">G. Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://www.linkedin.com/in/srihari-vemuru/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
         <br><br>
         vemshari@iastate.edu
@@ -93,7 +80,33 @@
       <div class="list-item publication" data-category="publication">
         <a class="thumbnail">
           <video playsinline="" muted="" autoplay="" loop="" width="180px">
-            <source src="images/FUEL_submission.mp4" type="video/mp4">
+            <source src="images/battery_swapping/FUEL_submission.mp4" type="video/mp4">
+          </video>
+        </a>
+        <div class="project-description">
+          <h3><a> UAV-Assisted Battery Delivery for Autonomous Delivery Robots</a></h3>
+          <p>
+            UAV-assisted Battery Management System (BMS) transforms energy logistics 
+            from “come-to-energy” to “energy-comes-to-you” through in-field battery 
+            swapping.
+          </p>
+        </div>
+      </div>
+      
+      <div class="list-item publication" data-category="publication">
+        <a class="thumbnail">
+          <img src="images/battery_swapping/battery_swap_dock.png" alt="Battery Swapping Dock thumbnail" width="180px">
+        </a>
+        <div class="project-description">
+          <h3><a href="#">Battery Swapping Dock</a></h3>
+          <p> A CAD-designed, 3D-printed passive sliding dock that enables UAV-assisted, in-field battery swapping for autonomous delivery robots.</p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a class="thumbnail">
+          <video playsinline="" muted="" autoplay="" loop="" width="180px">
+            <source src="" type="video/mp4">
           </video>
         </a>
         <div class="project-description">
@@ -129,6 +142,68 @@
           <p>
             Autonomous framework to detect anomalies (e.g., pests, weeds, deficiency, etc.) in a plantation setting and intervene to resolve them using a group of UAVs and UGVs. Given the regions of interest in a farm, where robotic interventions are required (e.g., watering, spraying, harvesting), the goal is to plan optimal routes for the heterogenous team of UAVs and UGVs. Each agent has specialized tools, and the tasks must be optimally assigned and executed. Given that the farms are largely unstructured and dynamically changing (e.g., wind), an efficient real-time planner is required for enabling the team of UAVs and UGVs to accurately reach the locations of interest to perform operations like spraying and harvesting.
           </p>
+        </div>
+      </div>
+      
+
+      <div class="list-item publication" data-category="publication">
+        <a class="thumbnail">
+          <img src="images/navvlm.png" alt="NavVLM thumbnail" width="180px">
+        </a>
+        <div class="project-description">
+          <h3><a href="#">NavVLM — Natural-Language Quadruped Navigation</a></h3>
+          <p>A quadruped navigation system in NVIDIA Isaac Sim using LLaVA to interpret natural-language commands and generate waypoint-based indoor navigation.</p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a class="thumbnail">
+          <img src="images/nerfly.png" alt="NeRFly thumbnail" width="180px">
+        </a>
+        <div class="project-description">
+          <h3><a href="#">NeRFly — NeRF-driven UAV Reconstruction & Planning</a></h3>
+          <p>A NeRF-based 3D reconstruction and trajectory planning system that generates energy-optimal UAV flight paths validated via SITL/HITL testing.</p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a class="thumbnail">
+          <img src="images/visual_agri/visual_agri.png" alt="Visual Agri-Robot Navigation thumbnail" width="180px">
+        </a>
+        <div class="project-description">
+          <h3><a href="#">Visual Agri-Robot Navigation — Crop-Row Servoing</a></h3>
+          <p>Visual-servoing algorithm to navigate a field robot between crop rows using heading and cross-track error minimization from front-camera data.</p>
+        </div>
+      </div>
+
+
+      <div class="list-item publication" data-category="publication">
+        <a class="thumbnail">
+          <img src="images/uav_object_mapper.png" alt="UAV Object Mapper thumbnail" width="180px">
+        </a>
+        <div class="project-description">
+          <h3><a href="#">UAV Object Mapper — Coverage & Mapping</a></h3>
+          <p>An autonomous UAV navigation and mapping pipeline for tight, collision-free coverage around arbitrary 3D objects; tested in Gazebo and on Crazyflie.</p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a class="thumbnail">
+          <img src="images/agribot_stack.png" alt="AgriBot Stack thumbnail" width="180px">
+        </a>
+        <div class="project-description">
+          <h3><a href="#">AgriBot Stack — Quadruped Spraying Planner</a></h3>
+          <p>Navigation and planning stack for a quadruped manipulator used for agricultural spraying, including CAD mounts and sensor integrations.</p>
+        </div>
+      </div>
+
+      <div class="list-item publication" data-category="publication">
+        <a class="thumbnail">
+          <img src="images/terrappo.png" alt="TerraPPO thumbnail" width="180px">
+        </a>
+        <div class="project-description">
+          <h3><a href="#">TerraPPO — Robust Quadruped Simulation</a></h3>
+          <p>MuJoCo-based quadruped simulation with terrain randomization and PPO-trained agents to improve sim-to-real locomotion robustness.</p>
         </div>
       </div>
 
