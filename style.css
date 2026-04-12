@@ -141,10 +141,10 @@ table {
 }
 
 #main {
-  width: 54em;
-  margin: 0px auto;
-  position: relative;
+  width: min(92vw, 54em);
+  margin: 0 auto;
   min-height: 100vh;
+  padding-bottom: 2em;
 }
 
 a {
@@ -177,24 +177,27 @@ h1 {
 #intro {
   padding-top: 6em;
   display: flex;
+  gap: 2em;
 }
 
 #intro-text {
-  width: 40em;
-  float: left;
+  flex: 1;
+  min-width: 0;
 }
 
 #intro-image {
-  margin: 2em 0 0 2em;
+  margin-top: 2em;
   width: 15em;
   height: 15em;
-  float: left;
   overflow: hidden;
   border-radius: 1em;
+  flex-shrink: 0;
 }
 
 #intro-image img {
-  width: 15em;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /**************************************************/
@@ -253,14 +256,7 @@ h2 {
 /* Isotope grid list of items. */
 
 .grid {
-  padding-bottom: 6em;
-}
-
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
+  padding-bottom: 3em;
 }
 
 .description {
@@ -268,12 +264,15 @@ h2 {
 }
 
 .list-item {
-  clear: both; /* Add this to prevent overlap */
+  display: grid;
+  grid-template-columns: minmax(14rem, 20rem) minmax(0, 1fr);
+  gap: 1.1rem 1.4rem;
+  align-items: start;
   width: 100%;
-  line-height: 1em;
-  margin-top: 1em;
-  padding-bottom: 1em; /* Add some bottom padding */
-  border-bottom: 1px solid #eee; /* Optional separator */
+  line-height: 1.2em;
+  margin-top: 1.3em;
+  padding-bottom: 1.2em;
+  border-bottom: 1px solid #eee;
 }
 
 .list-item p.date {
@@ -334,34 +333,83 @@ h2 {
 /**************************************************/
 /* Publication details (thumbnail media, title, and description). */
 
-.thumbnail {
-  /*  width: 21%;*/
-  width: 40%; /* Increased from 18% to 25% */
-  float: left;
-  margin-right: 2%;
+.thumbnail-container {
+  width: 100%;
 }
 
-.thumbnail:hover {
-  border-bottom: none;
+.thumbnail-stage {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 0.6em;
+  overflow: hidden;
+  background: #eef1f5;
 }
 
-.thumbnail img {
-  margin-top: 0.4em;
-  border-radius: 5px;
+.primary-media {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.thumbnail video {
-  margin-top: 0.4em;
-  border-radius: 5px;
+.thumbnail-placeholder {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #67707c;
+  font-size: 0.9em;
+  text-align: center;
+  padding: 0.7em;
+  box-sizing: border-box;
+}
+
+.media-strip {
+  margin-top: 0.6em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45em;
+}
+
+.media-thumb {
+  width: 3.1rem;
+  height: 3.1rem;
+  border: 1px solid #d2d8df;
+  border-radius: 0.45em;
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0;
+}
+
+.media-thumb.is-active {
+  border-color: rgb(20, 110, 190);
+  box-shadow: 0 0 0 2px rgba(20, 110, 190, 0.15);
+}
+
+.media-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.media-thumb-video-label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.73rem;
+  color: #33414f;
+  background: #f4f7fa;
 }
 
 h3 {
   font-size: 1em;
   line-height: 1.5em;
+  font-weight: 600;
 }
 
 h3 a {
@@ -373,8 +421,7 @@ h3 a:hover {
 }
 
 .publication {
-  margin-bottom: 2em; /* Increased from 0.5em to 2em */
-  overflow: hidden; /* Clear floats */
+  margin-bottom: 1.2em;
 }
 
 .publication p {
@@ -382,15 +429,38 @@ h3 a:hover {
   line-height: 1.5em;
   color: #a0a8b0;
 }
-.publication::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .project-description {
-  width: 50%; /* Decreased from 80% to 73% to accommodate larger thumbnail */
-  float: left;
+  width: 100%;
+  min-width: 0;
+}
+
+.project-links {
+  margin-top: 0.8em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45em;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2em 0.6em;
+  border: 1px solid rgba(20, 110, 190, 0.35);
+  border-radius: 999px;
+  font-size: 0.86em;
+  line-height: 1.5em;
+}
+
+.project-link:hover {
+  border-color: rgb(20, 110, 190);
+}
+
+.projects-loading,
+.projects-load-error {
+  color: #67707c;
+  font-size: 0.98em;
+  padding: 0.6em 0;
 }
 
 /**************************************************/
@@ -398,9 +468,8 @@ h3 a:hover {
 
 #footer {
   color: #a0a8b0;
-  position: absolute;
-  bottom: 0;
-  line-height: 2.5em;
+  line-height: 1.8em;
+  margin-top: 0.2em;
 }
 
 .excerpt-container {
@@ -430,8 +499,26 @@ h3 a:hover {
   display: block;
 }
 
-.publication .thumbnail {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 900px) {
+  #intro {
+    flex-direction: column-reverse;
+    gap: 1.2em;
+    padding-top: 3.2em;
+  }
+
+  #intro-image {
+    margin-top: 0;
+    width: min(13.5em, 55vw);
+    height: min(13.5em, 55vw);
+  }
+}
+
+@media (max-width: 740px) {
+  .list-item {
+    grid-template-columns: 1fr;
+  }
+
+  .thumbnail-container {
+    max-width: 28rem;
+  }
 }

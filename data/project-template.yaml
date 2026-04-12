@@ -1,0 +1,25 @@
+# Copy the block below into data/projects.yaml under the `projects:` list.
+# Required fields: id, category, title, description.
+# Optional fields: media (recommended), links.
+
+- id: your-project-id
+  category: publication
+  title: Your Project Title
+  description: >-
+    One or two concise lines explaining what the project does and why it
+    matters.
+  media:
+    - type: image # image | video
+      src: images/path/to/thumbnail.png
+      alt: Concise accessibility description for this media
+    - type: video
+      src: images/path/to/demo.mp4
+      alt: Video demo description
+      poster: images/path/to/video-poster.png # Optional but recommended for video
+  links:
+    - label: Source Code
+      type: code # code | paper | demo | video | docs
+      url: https://github.com/username/repository
+    - label: Demo
+      type: demo
+      url: https://example.com/demo

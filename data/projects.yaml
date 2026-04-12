@@ -1,0 +1,158 @@
+projects:
+  - id: uav-assisted-battery-delivery
+    category: publication
+    title: UAV-Assisted Battery Delivery for Autonomous Delivery Robots
+    description: >-
+      UAV-assisted Battery Management System (BMS) transforms energy logistics
+      from come-to-energy to energy-comes-to-you through in-field battery
+      swapping. A CAD-designed, 3D-printed passive sliding dock that enables UAV-assisted, in-field battery swapping for autonomous delivery robots.
+    media:
+      - type: video
+        src: images/battery_swapping/FUEL_submission.mp4
+        alt: UAV-assisted battery delivery demonstration
+        poster: images/battery_swapping/tb1.jpg
+      - type: image
+        src: images/battery_swapping/battery_swap_dock.png
+        alt: Battery swapping dock CAD thumbnail
+    links:
+      - label: Source Code
+        type: code
+        url: https://github.com/vemshari27/battery-swap-dock.git
+
+  - id: rl-uav-ugv-multi-agent-planning
+    category: publication
+    title: Reinforcement Learning for UAV-UGV Multi-agent Planning
+    description: >-
+      Reinforcement learning (RL) agents for delivery task execution, enabling adaptive decision-making in complex, partially observable environments. Algortithms like SARSA, DQN, A2C and PPO are used to train agents for UAV-UGV multi-agent planning tasks. The agents learn to navigate and collaborate in dynamic environments, enhancing their performance through continuous learning and adaptation.
+    media:
+      - type: image
+        src: images/rl_evrp/env.png
+        alt: RL planning project placeholder visual
+    links:
+      - label: Source Code
+        type: code
+        url: https://anonymous.4open.science/r/uav-assisted-lmd-5DB5/README.md
+
+  - id: localization-stationary-object-tracking
+    category: publication
+    title: Localization-based Stationary Object Tracking in Precision Agriculture
+    description: >-
+      Designed a novel object tracking system based on Simultaneous
+      Localization and Mapping (SLAM), which improved tracking performance in
+      dynamic robotic scenarios and advanced real-time perception capabilities.
+    media:
+      - type: image
+        src: images/showcase.png
+        alt: Precision agriculture object tracking showcase
+    links:
+      - label: Paper
+        type: paper
+        url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4829514
+
+  - id: multi-agent-collaborative-agriculture
+    category: publication
+    title: Multi-agent collaborative framework for agriculture
+    description: >-
+      Autonomous framework to detect anomalies in plantations and intervene
+      using UAVs and UGVs. Plans optimal routes and assignments for
+      heterogeneous robotic teams in dynamic environments. Navigation and planning stack for a quadruped manipulator used for
+      agricultural spraying, including CAD mounts and sensor integrations.
+      Visual-servoing algorithm to navigate a field robot between crop rows using heading and cross-track error minimization from front-camera data.
+    media:
+      - type: video
+        src: images/agri_robot/mango_drone.mp4
+        alt: Multi-agent agriculture framework demo
+        poster: images/agri_robot/tb1.jpg
+      - type: image
+        src: images/agri_robot/visual_agri.png
+        alt: Visual agricultural robot navigation snapshot
+      - type: image
+        src: images/agri_robot/visual_agri.png
+        alt: Visual agricultural robot navigation snapshot
+    links:
+      - label: Source Code
+        type: code
+        url: https://github.com/vemshari27/visual-robot-navigation.git
+      - label: Source Code
+        type: code
+        url: https://github.com/vemshari27/agribot-sprayer.git
+
+  # - id: navvlm
+  #   category: publication
+  #   title: NavVLM - Natural-Language Quadruped Navigation
+  #   description: >-
+  #     A quadruped navigation system in NVIDIA Isaac Sim using LLaVA to
+  #     interpret natural-language commands and generate waypoint-based
+  #     indoor navigation.
+  #   media:
+  #     - type: image
+  #       src: images/tmp.jpg
+  #       alt: NavVLM project placeholder visual
+
+  - id: nerfly
+    category: publication
+    title: NeRFly - NeRF-driven UAV Reconstruction and Planning
+    description: >-
+      A NeRF-based 3D reconstruction and trajectory planning system that
+      generates energy-optimal UAV flight paths validated via SITL and HITL
+      testing.
+    media:
+      - type: image
+        src: images/nerfly/overview.png
+        alt: NeRFly project placeholder visual
+      - type: video
+        src: images/nerfly/gz.mp4
+        alt: Multi-agent agriculture framework demo
+        poster: images/nerfly/tb1.jpg
+      - type: video
+        src: images/nerfly/rviz.mp4
+        alt: Multi-agent agriculture framework demo
+        poster: images/nerfly/tb2.jpg
+    links:
+      - label: Source Code
+        type: code
+        url: https://github.com/vemshari27/UAVSurveillance.git
+
+  - id: terrappo
+    category: publication
+    title: TerraPPO - Robust Quadruped Simulation
+    description: >-
+      MuJoCo-based quadruped simulation with terrain randomization and
+      PPO-trained agents to improve sim-to-real locomotion robustness.
+    media:
+      - type: video
+        src: images/terappo/torque.mp4
+        alt: Multi-agent agriculture framework demo
+        poster: images/terappo/tb1.jpg
+      - type: video
+        src: images/terappo/control.mp4
+        alt: Multi-agent agriculture framework demo
+        poster: images/terappo/tb2.jpg
+    links:
+      - label: Source Code
+        type: code
+        url: https://github.com/vemshari27/go1-locomotion-rl.git
+
+  - id: medical-ai-sleep-apnea
+    category: publication
+    title: Medical AI - Sleep Apnea Detection Using Multimodal Learning
+    description: >-
+      Built a classification model to diagnose obstructive sleep apnea by
+      integrating head CT imaging data with patient health records. The
+      multimodal learning approach achieved 95% classification accuracy.
+    media:
+      - type: image
+        src: images/brain3.png
+        alt: Medical AI sleep apnea project thumbnail
+
+  - id: chest-disease-recognition
+    category: publication
+    title: Chest Disease Recognition
+    description: >-
+      Developed an AI system for chest disease recognition from chest X-ray
+      images with auxiliary patient information, producing detailed
+      radiological reports.
+    media:
+      - type: image
+        src: images/chest.png
+        alt: Chest disease recognition project thumbnail

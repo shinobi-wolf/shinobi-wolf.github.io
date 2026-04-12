@@ -9,15 +9,6 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-STGLQW4BJX');
-
-    function toggleExcerpt(elementId) {
-      const excerptDiv = document.getElementById(elementId);
-      if (excerptDiv.style.display === "none") {
-        excerptDiv.style.display = "block";
-      } else {
-        excerptDiv.style.display = "none";
-      }
-    }
   </script>
 
   <link rel="icon" type="image/png" href="images/favicon.png" />
@@ -25,12 +16,13 @@
   <!-- Title -->
   <title>Srihari Vemuru</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=1000">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Isotope JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 
   <!-- Custom Style -->
   <link rel="stylesheet" href="style.css">
@@ -41,9 +33,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-  </style>
 </head>
 
 <body id="body">
@@ -53,185 +42,27 @@
       <div id="intro-text">
         <h1>Srihari Vemuru</h1>
         <p>
-          Hi! I am a Masters student in Mechanical Engineering at Resilient Multi-Agent Systems Lab, Iowa State University. 
-          My research focuses on multi-robot planning using reinforcement learning (RL) and robotic perception. 
-          I have hands-on experience working with UAVs, UGVs, and quadruped robots. My work integrates RL and computer vision 
+          Hi! I am a Masters student in Mechanical Engineering at Resilient Multi-Agent Systems Lab, Iowa State University.
+          My research focuses on multi-robot planning using reinforcement learning (RL) and robotic perception.
+          I have hands-on experience working with UAVs, UGVs, and quadruped robots. My work integrates RL and computer vision
           into path planning frameworks to tackle game-theoretic challenges in multi-agent systems.
           <br><br>
-        <br>
-        <!-- <a href="javascript:toggle_bio()">Formal Bio</a>&nbsp;&nbsp;&nbsp;&nbsp; -->
-        <a href="https://github.com/vemshari27">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://scholar.google.com/citations?user=qHaTOIoAAAAJ&hl=en">G. Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://www.linkedin.com/in/srihari-vemuru/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <br><br>
-        vemshari@iastate.edu
-        <br><br>
+          <br>
+          <a href="https://github.com/vemshari27">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://scholar.google.com/citations?user=qHaTOIoAAAAJ&hl=en">G. Scholar</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/srihari-vemuru/">LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <br><br>
+          <a href="mailto:vemshari@iastate.edu">vemshari@iastate.edu</a>
+          <br><br>
         </p>
       </div>
       <div id="intro-image">
-        <img src="images/profile.jpeg">
+        <img src="images/profile.jpeg" alt="Srihari Vemuru profile image">
       </div>
     </div>
 
-
-    <div class="grid">
-      <!-- Publications -->
-
-      <div class="list-item publication" data-category="publication">
-        <a class="thumbnail">
-          <video playsinline="" muted="" autoplay="" loop="" width="180px">
-            <source src="images/battery_swapping/FUEL_submission.mp4" type="video/mp4">
-          </video>
-        </a>
-        <div class="project-description">
-          <h3><a> UAV-Assisted Battery Delivery for Autonomous Delivery Robots</a></h3>
-          <p>
-            UAV-assisted Battery Management System (BMS) transforms energy logistics 
-            from “come-to-energy” to “energy-comes-to-you” through in-field battery 
-            swapping.
-          </p>
-        </div>
-      </div>
-      
-      <div class="list-item publication" data-category="publication">
-        <a class="thumbnail">
-          <img src="images/battery_swapping/battery_swap_dock.png" alt="Battery Swapping Dock thumbnail" width="180px">
-        </a>
-        <div class="project-description">
-          <h3><a href="#">Battery Swapping Dock</a></h3>
-          <p> A CAD-designed, 3D-printed passive sliding dock that enables UAV-assisted, in-field battery swapping for autonomous delivery robots.</p>
-        </div>
-      </div>
-
-      <div class="list-item publication" data-category="publication">
-        <a class="thumbnail">
-          <video playsinline="" muted="" autoplay="" loop="" width="180px">
-            <source src="" type="video/mp4">
-          </video>
-        </a>
-        <div class="project-description">
-          <h3><a> Reinforcement Learning for UAV-UGV Multi-agent Planning</a></h3>
-          <p>
-            Reinforcement learning (RL) agents for delivery task execution, enabling adaptive decision-making in complex, partially observable environments. Algortithms
-            like SARSA, DQN, A2C and PPO are used to train agents for UAV-UGV multi-agent planning tasks.
-            The agents learn to navigate and collaborate in dynamic environments, enhancing their performance through continuous learning and adaptation.
-          </p>
-        </div>
-      </div>
-
-      <div class="list-item publication" data-category="publication">
-        <a class="thumbnail">
-          <img src="images/showcase.png" alt="Showcase Thumbnail" width="180px">
-        </a>
-        <div class="project-description">
-          <h3><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4829514"> Localization-based Stationary Object Tracking in Precision Agriculture</a></h3>
-          <p>
-            Designed a novel object tracking system based on Simultaneous Localization and Mapping (SLAM), which significantly improved tracking performance in dynamic robotic scenarios. This model surpassed existing state-of-the-art trackers by 30.9%, making it a valuable tool for robots operating in cluttered and rapidly changing environments. The project advanced real-time perception capabilities in robotics by combining object tracking with spatial mapping.
-          </p>
-        </div>
-      </div>
-
-      <div class="list-item publication" data-category="publication">
-        <a class="thumbnail">
-          <video playsinline="" muted="" autoplay="" loop="" width="180px">
-            <source src="images/mango_drone.mp4" type="video/mp4">
-          </video>
-        </a>
-        <div class="project-description">
-          <h3><a> Multi-agent collaborative framework for agriculture</a></h3>
-          <p>
-            Autonomous framework to detect anomalies (e.g., pests, weeds, deficiency, etc.) in a plantation setting and intervene to resolve them using a group of UAVs and UGVs. Given the regions of interest in a farm, where robotic interventions are required (e.g., watering, spraying, harvesting), the goal is to plan optimal routes for the heterogenous team of UAVs and UGVs. Each agent has specialized tools, and the tasks must be optimally assigned and executed. Given that the farms are largely unstructured and dynamically changing (e.g., wind), an efficient real-time planner is required for enabling the team of UAVs and UGVs to accurately reach the locations of interest to perform operations like spraying and harvesting.
-          </p>
-        </div>
-      </div>
-      
-
-      <div class="list-item publication" data-category="publication">
-        <a class="thumbnail">
-          <img src="images/navvlm.png" alt="NavVLM thumbnail" width="180px">
-        </a>
-        <div class="project-description">
-          <h3><a href="#">NavVLM — Natural-Language Quadruped Navigation</a></h3>
-          <p>A quadruped navigation system in NVIDIA Isaac Sim using LLaVA to interpret natural-language commands and generate waypoint-based indoor navigation.</p>
-        </div>
-      </div>
-
-      <div class="list-item publication" data-category="publication">
-        <a class="thumbnail">
-          <img src="images/nerfly.png" alt="NeRFly thumbnail" width="180px">
-        </a>
-        <div class="project-description">
-          <h3><a href="#">NeRFly — NeRF-driven UAV Reconstruction & Planning</a></h3>
-          <p>A NeRF-based 3D reconstruction and trajectory planning system that generates energy-optimal UAV flight paths validated via SITL/HITL testing.</p>
-        </div>
-      </div>
-
-      <div class="list-item publication" data-category="publication">
-        <a class="thumbnail">
-          <img src="images/visual_agri/visual_agri.png" alt="Visual Agri-Robot Navigation thumbnail" width="180px">
-        </a>
-        <div class="project-description">
-          <h3><a href="#">Visual Agri-Robot Navigation — Crop-Row Servoing</a></h3>
-          <p>Visual-servoing algorithm to navigate a field robot between crop rows using heading and cross-track error minimization from front-camera data.</p>
-        </div>
-      </div>
-
-
-      <div class="list-item publication" data-category="publication">
-        <a class="thumbnail">
-          <img src="images/uav_object_mapper.png" alt="UAV Object Mapper thumbnail" width="180px">
-        </a>
-        <div class="project-description">
-          <h3><a href="#">UAV Object Mapper — Coverage & Mapping</a></h3>
-          <p>An autonomous UAV navigation and mapping pipeline for tight, collision-free coverage around arbitrary 3D objects; tested in Gazebo and on Crazyflie.</p>
-        </div>
-      </div>
-
-      <div class="list-item publication" data-category="publication">
-        <a class="thumbnail">
-          <img src="images/agribot_stack.png" alt="AgriBot Stack thumbnail" width="180px">
-        </a>
-        <div class="project-description">
-          <h3><a href="#">AgriBot Stack — Quadruped Spraying Planner</a></h3>
-          <p>Navigation and planning stack for a quadruped manipulator used for agricultural spraying, including CAD mounts and sensor integrations.</p>
-        </div>
-      </div>
-
-      <div class="list-item publication" data-category="publication">
-        <a class="thumbnail">
-          <img src="images/terrappo.png" alt="TerraPPO thumbnail" width="180px">
-        </a>
-        <div class="project-description">
-          <h3><a href="#">TerraPPO — Robust Quadruped Simulation</a></h3>
-          <p>MuJoCo-based quadruped simulation with terrain randomization and PPO-trained agents to improve sim-to-real locomotion robustness.</p>
-        </div>
-      </div>
-
-      <div class="list-item publication" data-category="publication">
-        <a class="thumbnail">
-          <img src="images/brain3.png" alt="Showcase Thumbnail" width="180px">
-        </a>
-        <div class="project-description">
-          <h3><a> Medical AI: Sleep Apnea Detection Using Multimodal Learning</a></h3>
-          <p>
-            Built a classification model to diagnose obstructive sleep apnea by integrating head CT imaging data with patient health records. The multimodal learning approach achieved an impressive 95% accuracy in classification, offering a promising solution for early and accurate detection of sleep apnea. This project contributed to advancing biomedical AI, particularly in the domain of personalized healthcare.
-          </p>
-        </div>
-      </div>
-
-      <div class="list-item publication" data-category="publication">
-        <a class="thumbnail">
-          <img src="images/chest.png" alt="Showcase Thumbnail" width="180px">
-        </a>
-        <div class="project-description">
-          <h3><a> Chest Disease Recognition</a></h3>
-            <p>
-            Developed an AI system for comprehensive chest disease recognition from chest X-ray images. The model takes both the X-ray image and auxiliary patient information as input, and generates a detailed radiological report describing the findings. The architecture combines CNNs and DNNs to extract features, which are then fused using a feature combination network. An LSTM or Transformer-based model is used to generate the textual analysis. Additionally, the project explores advanced representation learning techniques to improve diagnostic accuracy and interpretability.
-          </p>
-        </div>
-      </div>
-
-
+    <div class="grid" id="projects-container">
+      <p class="projects-loading">Loading projects...</p>
     </div>
     <div id="footer">
       Website template by <a href="https://andyzeng.github.io/">Andy Zeng</a> and <a
@@ -241,89 +72,9 @@
 
   </div>
 
-  <script>
-
-    // Isotope grid.
-    var $grid = $('.grid').isotope({
-      itemSelector: '.list-item',
-      layoutMode: 'fitRows',
-      transitionDuration: 0,
-      stagger: 10,
-      initLayout: false,
-      getSortData: {
-        name: '.name',
-        symbol: '.symbol',
-        number: '.number parseInt',
-        category: '[data-category]',
-        weight: function (itemElem) {
-          var weight = $(itemElem).find('.weight').text();
-          return parseFloat(weight.replace(/[\(\)]/g, ''));
-        }
-      }
-    });
-
-    // Bind filter button click.
-    $('#filters').on('click', 'button', function () {
-      var filterValue = $(this).attr('data-filter');
-      localStorage.setItem('filterValue', filterValue);
-      $grid.isotope({ filter: filterValue });
-    });
-
-    // Change is-checked class on buttons.
-    $('.button-group').each(function (i, buttonGroup) {
-      var $buttonGroup = $(buttonGroup);
-      $buttonGroup.on('click', 'button', function () {
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        $(this).addClass('is-checked');
-      });
-    });
-
-    function update_isotope() {
-      // Retrieve cached button click.
-      var defaultFilterValue = localStorage.getItem('filterValue');
-      if (defaultFilterValue == null) {
-        defaultFilterValue = ".publication"  // Changed from ".highlight" to ".publication"
-      }
-      $grid.isotope({ filter: defaultFilterValue });
-      var buttons = document.getElementsByClassName("button");
-      for (var currButton of buttons) {
-        if (currButton.getAttribute('data-filter') == defaultFilterValue) {
-          currButton.classList.add('is-checked');
-        } else {
-          currButton.classList.remove('is-checked');
-        }
-      }
-    }
-
-    function toggle_bio() {
-      var x = document.getElementById("more-bio");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-
-    function toggle_highlights() {
-      var x = document.getElementById("main-highlights");
-      var y = document.getElementById("more-highlights");
-      var b = document.getElementById("toggle_highlights_button")
-      if (y.style.display === "none") {
-        x.style.display = "none";
-        y.style.display = "block";
-        b.innerHTML = "Show less"
-        update_isotope();
-      } else {
-        x.style.display = "block";
-        y.style.display = "none";
-        b.innerHTML = "Show more"
-        update_isotope();
-      }
-    }
-
-    update_isotope();
-
-  </script>
+  <script src="js/media-strip.js"></script>
+  <script src="js/isotope-init.js"></script>
+  <script src="js/projects-renderer.js"></script>
 </body>
 
 </html>
