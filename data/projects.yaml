@@ -19,6 +19,26 @@ projects:
         type: code
         url: https://github.com/vemshari27/battery-swap-dock.git
 
+  - id: terrappo
+    category: publication
+    title: TerraPPO - Robust Quadruped Simulation
+    description: >-
+      MuJoCo-based quadruped simulation with terrain randomization and
+      PPO-trained agents to improve sim-to-real locomotion robustness.
+    media:
+      - type: video
+        src: images/terappo/torque.mp4
+        alt: Multi-agent agriculture framework demo
+        poster: images/terappo/tb1.jpg
+      - type: video
+        src: images/terappo/control.mp4
+        alt: Multi-agent agriculture framework demo
+        poster: images/terappo/tb2.jpg
+    links:
+      - label: Source Code
+        type: code
+        url: https://github.com/vemshari27/go1-locomotion-rl.git
+
   - id: rl-uav-ugv-multi-agent-planning
     category: publication
     title: Reinforcement Learning for UAV-UGV Multi-agent Planning
@@ -112,26 +132,6 @@ projects:
       - label: Source Code
         type: code
         url: https://github.com/vemshari27/UAVSurveillance.git
-
-  - id: terrappo
-    category: publication
-    title: TerraPPO - Robust Quadruped Simulation
-    description: >-
-      MuJoCo-based quadruped simulation with terrain randomization and
-      PPO-trained agents to improve sim-to-real locomotion robustness.
-    media:
-      - type: video
-        src: images/terappo/torque.mp4
-        alt: Multi-agent agriculture framework demo
-        poster: images/terappo/tb1.jpg
-      - type: video
-        src: images/terappo/control.mp4
-        alt: Multi-agent agriculture framework demo
-        poster: images/terappo/tb2.jpg
-    links:
-      - label: Source Code
-        type: code
-        url: https://github.com/vemshari27/go1-locomotion-rl.git
 
   - id: medical-ai-sleep-apnea
     category: publication
