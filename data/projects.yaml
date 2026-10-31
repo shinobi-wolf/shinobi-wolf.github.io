@@ -17,7 +17,7 @@ projects:
     links:
       - label: Source Code
         type: code
-        url: https://github.com/vemshari27/battery-swap-dock.git
+        url: https://github.com/shinobi-wolf/battery-swap-dock.git
 
   - id: terrappo
     category: publication
@@ -37,7 +37,7 @@ projects:
     links:
       - label: Source Code
         type: code
-        url: https://github.com/vemshari27/go1-locomotion-rl.git
+        url: https://github.com/shinobi-wolf/go1-locomotion-rl.git
 
   - id: rl-uav-ugv-multi-agent-planning
     category: publication
@@ -51,7 +51,7 @@ projects:
     links:
       - label: Source Code
         type: code
-        url: https://anonymous.4open.science/r/uav-assisted-lmd-5DB5/README.md
+        url: https://github.com/shinobi-wolf/FleetNav
 
   - id: localization-stationary-object-tracking
     category: publication
@@ -68,6 +68,9 @@ projects:
       - label: Paper
         type: paper
         url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4829514
+      - label: Source Code
+        type: code
+        url: https://github.com/shinobi-wolf/LocalizeSORT
 
   - id: multi-agent-collaborative-agriculture
     category: publication
@@ -92,10 +95,10 @@ projects:
     links:
       - label: Source Code
         type: code
-        url: https://github.com/vemshari27/visual-robot-navigation.git
+        url: https://github.com/shinobi-wolf/visual-robot-navigation.git
       - label: Source Code
         type: code
-        url: https://github.com/vemshari27/agribot-sprayer.git
+        url: https://github.com/shinobi-wolf/agribot-sprayer.git
 
   # - id: navvlm
   #   category: publication
@@ -131,7 +134,7 @@ projects:
     links:
       - label: Source Code
         type: code
-        url: https://github.com/vemshari27/UAVSurveillance.git
+        url: https://github.com/shinobi-wolf/UAVSurveillance.git
 
   - id: medical-ai-sleep-apnea
     category: publication
